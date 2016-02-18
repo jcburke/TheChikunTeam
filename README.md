@@ -1,4 +1,4 @@
-# AlexJuanProject
+# TheChikunTeam
 Project Proposal for BIOL519
 
 We will likely be working on a project looking at the CHikungunya virus and environmental transmission factors.
