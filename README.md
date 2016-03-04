@@ -35,6 +35,9 @@ The datasets we intend to use in our project have been extracted from: (1) the C
 
 Thus, we plan to integrate these datasets to ask the following questions (1): Given the level of total precipitation and temperature, what is the likelihood that there will be predicted Chikungunya in a given area, and (2) Does this information compare to the same likelihoods for the areas of Latin America and the Caribbean?  We intend to use Matlab software to code the analysis portion of our dataset. We will use regression analysis to test for correlation of Chikungunya probability data with the temperature and precipitation data.  We then plan to perform a Principle Component Analysis (PCA) to investigate how well the climate data (i.e. temperature and precipitation) predict the likelihood of forecasting the Chikungunya virus in a given area of the United States. The data visualization for our project will include scatter plots displaying the correlation, and the PCA analysis results.  As a group, we plan to allocate efforts of gathering the information needed for the climate change data, as the data will be requested and downloaded from the NOAA website.  Then, we plan to begin the analysis portion of the project together through a face-to-face meeting, in case initial questions arise. Additional communication efforts will be conducted via GitHub, and face-to-face meetings, if needed. 
 
+
+Code for Anaylyzing Data in Matlab
+
 %%Barranquillo Columbia Climate Data from NOAA
 figure
 plot(MNTM,TPCP);
