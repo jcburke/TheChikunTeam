@@ -68,4 +68,25 @@ BIOL 419/519
 Chikungunya Project Interim Report
 	
 	In the study of using average temperature and precipitation to predict the likelihood that the Chikungunya virus will be in a given area, we have thus far added the Nowcast_Predictions_for_Local_Transmission_of_Chikungunya dataset into matlab along with datasets for certain US cities and one city in northern region of Columbia to use as a comparison to the US, especially the southern regions of the US that have particularly high prediction probabilities for the transmission of Chikungunya. We have also requested data from the NOAA website for the recorded monthly temperature and precipitation for the cities of interest for our study. For a preliminary visualization, we have graphed the mean monthly temperature versus the average precipitation for Barranquilla, Columbia. We have also created a scatter plot for the dates of January 1, 2014 through August 1, 2014 to show the mean monthly temperature along with the predicted transmission of Chikungunya during that time period. 
-
++	We have included a few graphs from our prelimnary datasets. (See Figures 1-4).  The Matlab code for Figures 1-4 is the following: 
++	Code for Anaylyzing Data in Matlab
+ 
++%%Barranquillo Columbia Climate Data from NOAA
++figure
++plot(MNTM,TPCP);
++xlabel('Mean Monthly Temperature');
++ylabel('Total Precipitation');
++
++%%Sorting Barranquillo Data from Chikungunya Transmission Data
++cities = cell2table(location);
++
++%Preliminary Information for the Charleston, South Carolina dataset from NOAA
++figure;
++gscatter (data(:, 3), data(:,2));
++xlabel('Mean Monthly Temperature');
++ylabel('Total Precipitation');
++
++figure;
++gscatter (data(:, 3), data(:,2), data(:,4));
++xlabel('Mean Monthly Temperature');
++ylabel('Total Precipitation');
