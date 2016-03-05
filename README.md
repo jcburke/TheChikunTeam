@@ -46,3 +46,8 @@ ylabel('Total Precipitation');
 
 %%Sorting Barranquillo Data from Chikungunya Transmission Data
 cities = cell2table(location);
+
+%Preliminary Information for the Charleston, South Carolina dataset from NOAA
+gscatter (data(:,3), data(:,2)); 
+xlabel ('MNTM–Monthly mean temperature'); 
+ylabel ('TPCP-Total precipitation amount for the month'); 
