@@ -47,6 +47,21 @@ ylabel('Total Precipitation');
 %%Sorting Barranquillo Data from Chikungunya Transmission Data
 cities = cell2table(location);
 
+%%Plotting Barranquilla Temperature and Transmission Data
+x = 1:8;
+y1 = MNTM(1:8,1);
+y2 = pLocalTransmissionAve1(2:9,1);
+figure
+plot(x,y1,'-ro');
+subplot
+plot(x,y2,'-.k');
+
+figure
+scatter(MNTM(1:8,1),pLocalTransmissionAve1(2:9,1),'k',filled);
+title('Barranquilla, CO Predicted Transmission vs Mean Monthly Temperature from January 2014 to August 2014');
+xlabel('Mean Monthly Temperature');
+ylabel('Average Predicted Chikungunya Transmission');
+
 Juandalyn Burke and Alexandria Blake
 BIOL 419/519
 4 March 2016
